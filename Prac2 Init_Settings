@@ -1,0 +1,22 @@
+Initial settings: Add a User, Network Settings, Configure Services, display the list of services which are running, 
+                  Stop and turn OFF auto-start setting for a service if you don’t need it, Sudo Settings.
+                  
+1. Adding a user:
+  adduser <username>
+
+2. iP Address
+   sudo ifconfig -a
+
+3. To run, start, enable service
+  sudo systemctl [command] [service_name]
+
+4. To stop and restart the service in Linux, use the command:
+  sudo systemctl restart SERVICE_NAME
+  sudo systemctl stop SERVICE_NAME
+
+5. List running services
+  sudo systemctl -t=service --state=running
+
+6. Sudo settings (when installing package)
+  sudo apt install package-name
+    
