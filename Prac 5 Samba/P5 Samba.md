@@ -57,6 +57,12 @@ sudo nano /etc/samba/smb.conf
 ```
 * Then type `Cntrl + X`, `y`, and then `Enter`
 
+> 8. **Setting up User Account**
+```
+sudo smbpasswd -a kali
+```
+_**Note:** Username must belong to a system account._
+
 ---
 > ### *For Samba Client*
 
