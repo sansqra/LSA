@@ -43,7 +43,7 @@ sudo ufw status
 ```
 ssh kali@127.0.0.1
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;_or_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_or_
 ```
 ssh kali@localhost
 ```
