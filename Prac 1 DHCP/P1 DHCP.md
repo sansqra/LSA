@@ -8,7 +8,7 @@
 
 ---
 
-### Steps:
+> ### Steps:
 
 > 1. Install dhcp-server:
 ```
