@@ -1,5 +1,5 @@
 > # **Practical 2**
-> #####  Aim: Initial settings: Adding users, Network settings, Configure services and List of services.
+> #####  Aim: Initial settings - Adding users, Network settings, Configure services and List of services.
 ---
 
 ### Steps:
