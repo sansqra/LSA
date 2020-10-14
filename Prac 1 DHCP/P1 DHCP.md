@@ -12,7 +12,7 @@
 
 > 1. Install dhcp-server:
 ```
-sudo apt-get install isc-dhcp-server
+sudo apt-get install -y isc-dhcp-server
 ```
 - The server has to be configured based on the ip address. To check you ip address, the command is `ip address` or `ip a`
 - You will also get info on the NIC card used. In this example we take `eth0`
@@ -22,7 +22,7 @@ sudo apt-get install isc-dhcp-server
 sudo ifconfig eth0 192.168.106.128 netmask 255.255.255.0
 ```
 
-> 3. Configuring dhcpd.conf - (a)
+> 3. Configuring /etc/dhcp/dhcpd.conf - (a)
 ```   
 sudo nano /etc/dhcp/dhcpd.conf
 ```
