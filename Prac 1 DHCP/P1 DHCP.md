@@ -1,5 +1,5 @@
 > # **Practical 1**
-> #####  Aim: Installation of DHCP Server
+> #####  Aim: Installation & Setup of DHCP Server
 ---
 
 ### DHCP: 
