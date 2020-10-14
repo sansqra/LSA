@@ -27,7 +27,7 @@ sudo apt update -y
  
  > 3. Use wget to get the debian package for MySQL (since it isn't natively available on Kali Linux; the distro used here)
  ```
- sudo apt install -y wget https://dev.mysql.com/get/mysql-apt-config_0.8.15-1_all.deb
+ sudo wget https://dev.mysql.com/get/mysql-apt-config_0.8.15-1_all.deb
  ```
  
  > 4. Install the package
