@@ -1,3 +1,70 @@
 > # **Practical 1**
-> #####  Installation of DHCP Server in Ubuntu
->--
+> #####  Aim: Installation of DHCP Server
+---
+
+### DHCP: 
+* The Dynamic Host Configuration Protocol (DHCP) is a network management protocol used on Internet Protocol (IP) networks, whereby a DHCP server dynamically assigns an IP address and other network configuration parameters to each device on the network, so they can communicate with other IP networks.
+* A DHCP server enables computers to request IP addresses and networking parameters automatically from the Internet service provider (ISP), reducing the need for a network administrator or a user to manually assign IP addresses to all network devices.
+
+---
+
+### Steps:
+
+1. Install dhcp-server:
+```
+sudo apt-get install isc-dhcp-server
+```
+- The server has to be configured based on the ip address. To check you ip address, the command is `ip address` or `ip a`
+- You will also get info on the NIC card used. In this example we take `eth0`
+
+2. Setting the ip
+```
+sudo ifconfig eth0 192.168.106.128 netmask 255.255.255.0
+```
+
+3. Configuring dhcpd.conf - (a)
+```   
+sudo nano /etc/dhcp/dhcpd.conf
+```
+
+4. Configuring dhcpd.conf by adding the following to the file - (b)
+```
+default-lease-time 600;
+max-lease-time 7200;
+
+subnet ip netmask broadcast {
+   range 192.168.1.150 192.168.1.200;
+   option routers 192.168.1.254;
+}
+```
+
+5. Next we will have to edit `/etc/default/isc-dhcp-server` 
+```
+sudo nano /etc/default/isc-dhcp-server
+```
+
+6. Edit the file according the values below:
+  ```
+  INTERFACESv4="eth0"
+  ```
+  
+7. Enabling dhcp-server:
+  ```
+  sudo systemctl enable isc-dhcp-server.service
+  ```
+
+8. To check service status, run the command:
+  ```
+  sudo systemctl status isc-dhcp-server.service
+  ```
+
+9. To start the service, run the command:
+  ```
+  sudo systemctl start isc-dhcp-server.service
+  ```
+  
+10. Finally, to check whether configured properly type:
+```
+sudo dhcp -T eth0
+```
+
