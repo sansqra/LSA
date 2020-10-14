@@ -2,7 +2,7 @@
 > #####  Aim: Initial settings - Adding users, Network settings, Configure services and Listing services.
 ---
 
-### Steps:
+> ### Steps:
 
 > 1. **Adding a user:**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Most modern Operating Systems support mutli-users. And hence, using the steps below, we will demonstrate how users are added, 
