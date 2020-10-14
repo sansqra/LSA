@@ -46,7 +46,7 @@ sudo nano /etc/exports
 sudo exportfs -ra
 ```
 
-6. Restart the nfs service
+> 6. Restart the nfs service
 ```
 sudo systemctl restart nfs-kernel-server
 ```
