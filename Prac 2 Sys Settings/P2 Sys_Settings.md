@@ -32,5 +32,5 @@ sudo systemctl -t=service --state=running
 
 > 5. **Installing packages**  
 ```
-sudo apt-get install package-name
+sudo apt-get install <package-name>
 ```
