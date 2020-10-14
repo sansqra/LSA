@@ -2,10 +2,11 @@
 > ##### Aim: Configure NFS server to share directories or files on your network.
 ---
 
-## *Network File System (NFS)*  
+> ## *Network File System (NFS)*  
 &nbsp;&nbsp;&nbsp;&nbsp; *It is a distributed file system protocol allowing a user on a client computer to access files over a computer network much like local storage is accessed.*
 
-## Steps
+---
+> ## Steps
 ---
 > ### For NFS Server
 
