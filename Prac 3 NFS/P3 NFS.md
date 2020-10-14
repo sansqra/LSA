@@ -36,7 +36,7 @@ echo "hello world" > test.txt
 ```
 sudo nano /etc/exports
 ```
-* &nbsp;&nbsp;&nbsp;&nbsp; Add the following line with the client IP (here 120.0.0.1, i.e localhost)
+* &nbsp;&nbsp;&nbsp;&nbsp; Add the following line with the client IP (here 127.0.0.1, i.e localhost)
 ```
 /mnt/sharedfolder <client_ip>(rw,sync,no_subtree_check)
 ```
