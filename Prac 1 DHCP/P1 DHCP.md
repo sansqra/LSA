@@ -17,7 +17,7 @@ sudo apt-get install isc-dhcp-server
 - The server has to be configured based on the ip address. To check you ip address, the command is `ip address` or `ip a`
 - You will also get info on the NIC card used. In this example we take `eth0`
 
-> 2. Setting the ip
+> 2. Setting up the IP
 ```
 sudo ifconfig eth0 192.168.106.128 netmask 255.255.255.0
 ```
