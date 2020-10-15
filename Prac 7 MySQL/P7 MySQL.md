@@ -3,7 +3,7 @@
 ---
 
 > ### MySQL
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *It is an open-source relational database management system (RDBMS). It uses SQL (Structured Query Language) to faciliate interaction with the 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *It is an open-source relational database management system (RDBMS). It uses SQL (Structured Query Language) to faciliate interaction with the 
 Database. In addition to relational databases and SQL, an RDBMS like MySQL works with an operating system to implement a relational database in a computer's storage system, 
 manages users, allows for network access and facilitates testing database integrity and creation of backups.*
 
