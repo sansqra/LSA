@@ -32,9 +32,9 @@ sudo nano /etc/dhcp/dhcpd.conf
 default-lease-time 600;
 max-lease-time 7200;
 
-subnet ip netmask broadcast {
-   range 192.168.1.150 192.168.1.200;
-   option routers 192.168.1.254;
+subnet 192.168.106.0 netmask 255.255.255.0 {
+   range 192.168.106.100 192.168.106.120;
+   option routers 192.168.106.255;
 }
 ```
 
@@ -65,6 +65,6 @@ sudo nano /etc/default/isc-dhcp-server
   
 > 10. Finally, to check whether configured properly type:
 ```
-sudo dhcp -T eth0
+sudo dhcpd -T eth0
 ```
 
